@@ -4,4 +4,4 @@
 In this article I will illustrate how to execute a payload loaded from a VBA macro script embedded in an Excel xlsm file.<br>
 The requirement was to bypass a note AV software installed on a client machine. Following the events:
 * A mail with the Excel file was sent to the client, here I play the role of the victim<br>
-![Alt text]( /screen/mail.png ?raw=true "Mail")
+![Screenshot](screen/mail.png)
