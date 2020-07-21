@@ -1,4 +1,4 @@
-# InfoSec_chronicles
+# InfoSec_chronicles from Noobland
 ## Abuse Excel VBA macro
 ###### 21/07/20 ver 1.0
 In this article I will illustrate how to execute a payload loaded from a VBA macro script embedded in an Excel xlsm file.<br>
