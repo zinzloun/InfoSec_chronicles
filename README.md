@@ -7,3 +7,7 @@ The requirement was to bypass a note AV software installed on a client machine. 
 ![Screenshot](screen/mail.png)
 * The mail was not marked as Spam, the user eventually can open directly the enclosed file using the corresponding Outlook feature or download to a local folder
 * Once the file has been opened of course a warning appears about the macro content. Here it is necessary to lure the user to enable the macro<br>
+![Screenshot](screen/macro.png)
+* If the macro is enabled the VBA script will *compile a payload*, in this case a bind shell and execute it. Here the MS firewall warn the user since I used a not common port (4444), using a port like 80 did not rise any warning<br>
+![Screenshot](screen/fwarn.png)
+
