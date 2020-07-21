@@ -24,6 +24,11 @@ I used a file system object to write the source code of the shell to the user te
     Dim oFile As Object
     Set oFile = FSO.CreateTextFile(path & "\mal.cs")
 ```
+* Then I write the content to the file
+```   
+   oFile.Write var
+   oFile.Close
+```
 * I used the same technique to get the port that is parametric and to initialize the wscript shell object<br>
 ![Screenshot](screen/propxlsm.png)
 ```
