@@ -10,4 +10,6 @@ The requirement was to bypass a note AV software installed on a client machine. 
 ![Screenshot](screen/macro.png)
 * If the macro is enabled the VBA script will *compile a payload*, in this case a bind shell and execute it. Here the MS firewall warn the user since I used a not common port (4444), using a port like 80 did not rise any warning<br>
 ![Screenshot](screen/fwarn.png)
+* The bind shell is executed (a shell window will popup, you need of course to hide it), the AV will sandbox the exe file but actually the shell is executed<br/>
+![Screenshot](screen/run.png)
 
