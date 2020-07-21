@@ -47,6 +47,6 @@ I used a file system object to write the source code of the shell to the *user t
 wSo.exec path & "\mal.exe"
 ```
 ###### *Conclusion*
-The idea is to compile a payload on the victim machine in order to avoid to downlad it from somewhere since the corresponding code will rise alerts on AV software, same thing happens trying to run a cmd or a bat file. Of course you have to avoid to embedd well-known code or msfvenom since they will be detected once compiled. Be creative and code your stuff.<br>Here you download the Excel file and the source code of the bind shell, the file is encrypted and you need a password to open it, if you are good guy ;) you can drop me an email at **filobers[at]protonmail[dot]com** and I will happy to provide it<br>
+The idea is to compile a payload on the victim machine in order to avoid to downlad it from somewhere since the corresponding code will rise alerts on AV software, same thing happens trying to run a cmd or a bat file. Of course you have to avoid to embedd well-known code or created with msfvenom since they will be detected once compiled. Be creative and code your stuff.<br>Here you download the Excel file and the source code of the bind shell, the file is encrypted and you need a password to open it, if you are good guy ;) you can drop me an email at **filobers[at]protonmail[dot]com** and I will happy to provide it<br>
 
 @salut
