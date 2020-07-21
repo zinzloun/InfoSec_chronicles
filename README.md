@@ -13,5 +13,6 @@ The requirement was to bypass a note AV software installed on a client machine. 
 * The bind shell is executed (a shell window will popup, you need of course to hide it), the AV will sandbox the exe file but actually the shell is executed<br/>
 ![Screenshot](screen/run.png)
 ###### *The logic*
-* I embedded the source code of the bind shell in the comment property of the Excel file Here the link to the MS doc: https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.tools.excel.workbook.builtindocumentproperties?view=vsto-2017<br>
-`var = ActiveWorkbook.BuiltinDocumentProperties(5)`
+* I embedded the source code of the bind shell in the comment property of the Excel file Here the link to the MS doc: https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.tools.excel.workbook.builtindocumentproperties?view=vsto-2017 and I retrived the value in the VBA script as follows:<br>
+`var = ActiveWorkbook.BuiltinDocumentProperties(5)`<br>
+
