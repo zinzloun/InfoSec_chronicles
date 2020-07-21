@@ -26,8 +26,8 @@ I used a file system object to write the source code of the shell to the user te
 ```
 * I used the same technique to get the port that is parametric and to initialize the wscript shell object<br>
 ![Screenshot](screen/propxlsm.png)
-<br>```
-shellObj = ActiveWorkbook.BuiltinDocumentProperties(4)`
-wSo = CreateObject(shellObj)`
+```
+    shellObj = ActiveWorkbook.BuiltinDocumentProperties(4)`
+    wSo = CreateObject(shellObj)`
 ```
 
