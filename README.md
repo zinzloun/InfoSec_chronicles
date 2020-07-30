@@ -1,5 +1,5 @@
 # InfoSec Chronicles from Noobland
-## Chapter 0: Abuse Excel VBA macro
+## Chapter 0: Abuse Excel VBA macro, a simple approach
 ###### 21/07/20 ver 1.2
 In this article I will illustrate how to execute a payload loaded from a VBA macro script embedded in an Excel xlsm file.<br>
 I did not implement any obfuscation\encrypting technique, this has to be consider as a POC. Beware that using well known tools will rise AV warning in most cases,
@@ -94,6 +94,8 @@ End Sub
 ```
 wSo.exec path & "\mal.exe"
 ```
+* Once the source file has been compiled it will be deleted, if not runnin even the exe file will be deleted on closing the Excel file
+
 ###### *Conclusion*
 The idea is to compile a payload on the victim machine in order to avoid to downlad it from somewhere since the corresponding code will rise alerts on AV software, same thing happens trying to run a cmd or a bat file. Not talk about powershell. Of course you have to avoid to embedd well-known code or created with msfvenom since they will be detected once compiled. Be creative and code your stuff.<br>Here you can download the Excel file and the source code of the bind shell, the file is encrypted and you need a password to open it, if you are good guy ;) you can drop me an email at **filobers[at]pm[dot]me** and I will happy to provide it<br>
 
