@@ -105,7 +105,7 @@ I had to bypass a white list applications execution enviroment, lucky PS scripts
 The client has installed an AV solution, with an host firewall. No IPS\IDS were present on the network (now they are!).<br>
 Here I will skip the social engineering part about how to lure the victim to lunch the PS script, actually this is the real magic part :). This is only a POC. Following the recipe:
 1. An SSL certificate (here I will use a fake one, providing the code to bypass the error)
-2. A windows client (AKA victim) machine: in this POC a win 10 pro x64 box, with a AV solution and host firewall activated
-3. An attacker Linux box with Python an *old netcat version installed, here I use Parrot OS
-Since this is onlya POC, as usual, not covering techniques are implemented, to cut the long story short I skip all the red teaming stuff.<br>
-Now going to sleep.... soon the continution!
+1. A windows client (AKA victim) machine: in this POC a win 10 pro x64 box, with a AV solution and host firewall activated
+1. An attacker Linux box with Python an *old netcat version installed, here I use Parrot OS.<bR>
+Since this is only a POC, as usual, not covering techniques are implemented, to cut the long story short I skip all the red teaming stuff. The execution plane was:<br>
+
