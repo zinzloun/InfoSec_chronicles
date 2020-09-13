@@ -109,4 +109,9 @@ Here I will skip the social engineering part about how to lure the victim to lun
 1. An attacker Linux box with Python an *old netcat version installed, here I use Parrot OS.
 
 Since this is only a POC, as usual, not covering techniques are implemented, to cut the long story short I skip all the red teaming stuff. The execution plane was:<br>
+1. The victim executes the PS script that download (though HTTPS) the encoded payload (a basic .Net Fw 3.5 reverse shell)
+1. The payload is converted back to the original executable file and it is saved on the desktop user profile (yes, that is, no AV detection)
+1. The exe file is hidden and executed
+1. I got a shell on the attacker machine
+
 
