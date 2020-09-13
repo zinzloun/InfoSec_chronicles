@@ -99,4 +99,13 @@ wSo.exec path & "\mal.exe"
 ###### *Conclusion*
 The idea is to compile a payload on the victim machine in order to avoid to downlad it from somewhere since the corresponding code will rise alerts on AV software, same thing happens trying to run a cmd or a bat file. Not talk about powershell. Of course you have to avoid to embedd well-known code or created with msfvenom since they will be detected once compiled. Be creative and code your stuff.<br>Here you can download the Excel file and the source code of the bind shell, the file is encrypted and you need a password to open it, if you are good guy ;) you can drop me an email at **filobers[at]pm[dot]me** and I will happy to assist you<br>
 
-@salut
+## Chapter 1: Abuse IE to download and execute a payload through PS
+###### 13/09/20 ver 1.0
+I had to bypass a white list applications execution enviroment, lucky PS scripts were allowed on almost every machine, as well as .Net FW 3.5 executable (not signed).<br/>
+The client has installed an AV solution, with an host firewall. No IPS\IDS were present on the network (now they are!).<br>
+Here I will skip the social engineering part about how to lure the victim to lunch the PS script, actually this is the real magic part :). This is only a POC. Following the recipe:
+1. An SSL certificate (here I will use a fake one, providing the code to bypass the error)
+2. A windows client (AKA victim) machine: in this POC a win 10 pro x64 box, with a AV solution and host firewall activated
+3. An attacker Linux box with Python an *old netcat version installed, here I use Parrot OS
+Since this is onlya POC, as usual, not covering techniques are implemented, to cut the long story short I skip all the red teaming stuff.<br>
+Now going to sleep.... soon the continution!
