@@ -101,7 +101,7 @@ The idea is to compile a payload on the victim machine in order to avoid to down
 
 ## Chapter 1: Abuse IE to download and execute a payload through PS
 ###### 13/09/20 ver 1.0
-I had to bypass a white list applications execution enviroment, lucky PS scripts were allowed on almost every machine, as well as .Net FW 3.5 executable (not signed).<br/>
+I had to bypass a white list applications execution enviroment, lucky PS scripts were allowed on almost every machine, as well as .Net FW 3.5 executable (not signed).
 The client has installed an AV solution, with an host firewall. No IPS\IDS were present on the network (now they are!).<br>
 Here I will skip the social engineering part about how to lure the victim to lunch the PS script, actually this is the real magic part :). This is only a POC. Following the recipe:
 1. An SSL certificate (here I will use a fake one, providing the code to bypass the error)
