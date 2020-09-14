@@ -139,5 +139,6 @@ else:
 The script location will be the document web server root, here we can host our encoded Base64 payload. In this case I used a simple reverse shell (slighty modified). You can find the source code here: https://gist.github.com/BankSecurity/55faad0d0c4259c623147db79b2a83cc. Here I changed the IP and the port to point to my attacker machine, 192.168.1.7:80, then 
 I encoded the compiled exe to Base64 string. You can use the application here (.Net FW 3.5 is required): https://github.com/zinzloun/InfoSec_chronicles/blob/master/Convert2Base64.exe to encode a binary file to a textual one.<br>
 Once converted move the file to the HTTPS root document in order to be downloaded as shown:<br>
+![Screenshot](screen/encodedExe.png)
 
 
