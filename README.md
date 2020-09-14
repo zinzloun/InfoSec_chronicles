@@ -200,5 +200,7 @@ The script is well commented and quite simple:
 4. Finally it is executed
 ![Screenshot](screen/execPay.png)<br>
 
+###### *Conclusion*
+We tricked the AV using IE to download the encoded payload, save on the user desktop as hidden file. Of course our finger print is evident, hiding the file is a puerile trick. But executing the payload in memory raised a malware detection on the AV. Actaully I thought to encrypt the client server comunication using, but actually this wasn't necessary since (at the moment of writining) the reverse shell is not detected. This techinique has been used successfully against 3 differents AV software. Since covering our tracks it was not a requirement we hit directly the target. Of course this article is just a working draft (as said at the moment), a cue.<br>
 
 
