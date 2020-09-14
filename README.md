@@ -193,6 +193,8 @@ if ($ie.Document.domain -Match $ip){
 else{"An error occured";}
 get-process iexplore | stop-process
 ```
+The script is well commented and quite simple. The encoded payload is downloaded and stored ia a variable string, then reversed to a binary file, saved and hidden on the user desktop. Finally it is executed:
+![Screenshot](screen/execPay.png)<br>
 
 
 
