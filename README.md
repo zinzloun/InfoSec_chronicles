@@ -115,7 +115,7 @@ Since this is only a POC, as usual, not covering techniques are implemented, to 
 1. I got a shell on the attacker machine
 
 So first of all set a HTTPS web server on the attacker machine, of course we can use a Python script:<br>
-<code>
+```
 #!/usr/bin/python2
 # taken from http://www.piware.de/2011/01/creating-an-https-server-in-python/
 # generate server.xml with the following command:
@@ -135,6 +135,5 @@ if len(sys.argv) > 1:
     httpd.serve_forever()    
 else:
     print "You must pass the local IP address to bind: " + sys.argv[0] + " 192.168.1.11"
-
-</code>
+```
 
