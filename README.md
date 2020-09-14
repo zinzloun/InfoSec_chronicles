@@ -136,4 +136,6 @@ if len(sys.argv) > 1:
 else:
     print "You must pass the local IP address to bind: " + sys.argv[0] + " 192.168.1.11"
 ```
+The script location will be the document web server root, here we can host our encoded Base64 payload. In this case I used a simple reverse shell (slighty modified). You can find the source code here: https://gist.github.com/BankSecurity/55faad0d0c4259c623147db79b2a83cc. Here I changed the IP and the port to point to my attacker machine, 192.168.1.7:80, then 
+I encoded the compiled exe to Base64 string. You can use the application <b>ConvertToBase64.exe</b> (.Net FW 3.5 is required) to encode a binary file to a textual one.<br>
 
