@@ -13,4 +13,9 @@ The client has installed an AV solution, with an host firewall. No IPS\IDS were 
 ###### 17/09/20 ver 1.0
 In oreder to test Security Onion before to install it on production I wrote down some notes, this has to be consider a Homelab and no payed software were used, you can get an evaluation copy of Win 10 enterprise valid for 90 days or just install another light Linux OS like: https://www.bunsenlabs.org. Parrot OS is also used
 
+<i>
+  
+	The linked files are in Cherry Tree format, you can get it here: https://www.giuspen.com/cherrytree
+	
 
+  </i>
