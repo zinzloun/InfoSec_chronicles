@@ -28,7 +28,8 @@ https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap2.ctb
  	* Stunnel wait for incoming encrypted request
  	* Got a shell
 <hr>
-*The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree*
+
+<sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
 	
 
  
