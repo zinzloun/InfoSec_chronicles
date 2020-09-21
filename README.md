@@ -16,6 +16,18 @@ https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap1.ctb
 In oreder to test Security Onion before to install it on production I wrote down some notes, this has to be consider a Homelab and no payed software were used, you can get an evaluation copy of Win 10 enterprise valid for 90 days or just install another light Linux OS like: https://www.bunsenlabs.org. Parrot OS is also used.<br>
 https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap2.ctb
 
+## Chapter 3: Download an encrypted RS and execute in memory (code in VB.net)
+###### 21/09/20 ver 1.0
+* The victim
+	* Fully patched Win10 pro edition, FW is enabled and managed by the AV software
+ 	* Download the encoded payload as string through HTTPS
+ 	* Load the binary in memory and execute it
+ 
+* On the other side (attacker)
+ 	* Host an encoded (Base64) reverse shell that implements SSLstream (TLS 1.2 as encryption protocol)
+ 	* Stunnel wait for incoming encrypted request
+ 	* Got a shell
+
 *The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree*
 	
 
