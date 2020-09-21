@@ -16,9 +16,7 @@ https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap1.ctb
 In oreder to test Security Onion before to install it on production I wrote down some notes, this has to be consider a Homelab and no payed software were used, you can get an evaluation copy of Win 10 enterprise valid for 90 days or just install another light Linux OS like: https://www.bunsenlabs.org. Parrot OS is also used.<br>
 https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap2.ctb
 
-<br>
-  
-	The linked files are in Cherry Tree format, you can get it [here](https://www.giuspen.com/cherrytree)
+The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree
 	
 
  
