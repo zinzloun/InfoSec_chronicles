@@ -27,7 +27,7 @@ https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap2.ctb
  	* Host an encoded (Base64) reverse shell that implements SSLstream (TLS 1.2 as encryption protocol)
  	* Stunnel wait for incoming encrypted request
  	* Got a shell
-
+<hr>
 *The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree*
 	
 
