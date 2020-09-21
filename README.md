@@ -25,7 +25,7 @@ https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap2.ctb
  
 * On the other side (attacker)
  	* Host an encoded (Base64) reverse shell that implements SSLstream (TLS 1.2 as encryption protocol)
- 	* Stunnel wait for incoming encrypted request
+ 	* Stunnel wait for incoming encrypted connections
  	* Got a shell without AV detection
 <hr>
 
