@@ -18,7 +18,7 @@ https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap2.ctb
 
 ## Chapter 3: Abuse MSBuild to compile and execute a C# wrapper that using the Runspace object executes a Powershell reverse shell in memory
 ###### 30/09/20 ver 1.0
-The test has been carried out against 3 Win10X64 machine, fully patched with different AV software installed. No encoding\encryption has been implemented. Keeping the things simple actually did the trick.
+The test has been carried out against 3 Win10X64 machine, fully patched with different AV software installed. No encoding\encryption has been implemented. Keeping the things simple actually did the trick. Here the article: https://github.com/zinzloun/InfoSec_chronicles/raw/master/chapters/chap3.ctd
 
 <hr>
 
