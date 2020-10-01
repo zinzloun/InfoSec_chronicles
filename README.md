@@ -15,19 +15,11 @@ https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap1.ctb
 ###### 17/09/20 ver 1.0
 In oreder to test Security Onion before to install it on production I wrote down some notes, this has to be consider a Homelab and no payed software were used, you can get an evaluation copy of Win 10 enterprise valid for 90 days or just install another light Linux OS like: https://www.bunsenlabs.org. Parrot OS is also used.<br>
 https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap2.ctb
-<!--
-## Chapter 3: Download an encrypted RS and execute in memory (code in VB.net)
-###### 21/09/20 ver 1.0
-* The victim
-	* Fully patched Win10 pro edition, FW is enabled and managed by the AV software
- 	* Download the encoded payload as string through HTTPS
- 	* Load the binary in memory and execute it
- 
-* On the other side (attacker)
- 	* Host an encoded (Base64) reverse shell that implements SSLstream (TLS 1.2 as encryption protocol)
- 	* Stunnel wait for incoming encrypted connections
- 	* Got a shell without AV detection
--->
+
+## Chapter 3: Abuse MSBuild to compile and execute a C# wrapper that using the Runspace object executes a Powershell reverse shell in memory
+###### 30/09/20 ver 1.0
+The test has been carried out against 3 Win10X64 machine, fully patched with different AV software installed. No encoding\encryption has been implemented. Keeping the things simple actually did the trick.
+
 <hr>
 
 <sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
