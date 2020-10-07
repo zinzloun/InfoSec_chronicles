@@ -16,7 +16,7 @@ https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap1.ctb
 In oreder to test Security Onion before to install it on production I wrote down some notes, this has to be consider a Homelab and no payed software were used, you can get an evaluation copy of Win 10 enterprise valid for 90 days or just install another light Linux OS like: https://www.bunsenlabs.org. Parrot OS is also used.<br>
 https://github.com/zinzloun/InfoSec_chronicles/blob/master/chapters/chap2.ctb
 
-## Chapter 3: Abuse MSBuild to compile and execute a C# wrapper that using the Runspace object executes a Powershell reverse shell in memory
+## Chapter 3: Abuse MSBuild to compile and execute a C# wrapper that, using the Runspace object, executes a Powershell reverse shell
 ###### 30/09/20 ver 1.0
 The test has been carried out against 3 Win10X64 machine, fully patched with different AV software installed. No encoding\encryption has been implemented. Keeping the things simple actually did the trick. Here the article: https://github.com/zinzloun/InfoSec_chronicles/raw/master/chapters/chap3.ctd
 
