@@ -37,7 +37,7 @@ The LAB setup is composed by 3 VM: the pfSense firewall, a Centos 8 HTTP server 
 
 [Read this story](./chapters/chap4.ctb)
 
-## Chapter 5: A simple example Test Drive Development solution in VS2019ce
+## Chapter 5: A simple example of a Test Drive Development solution in VS2019ce
 ###### 10/12/20 ver 1.0
 The Visual Studio solution is composed by 2 projects:
 1. A simple class to validate email, password and credit card datas (class1.cs)
