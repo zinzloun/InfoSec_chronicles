@@ -35,9 +35,9 @@ The Visual Studio solution is composed by 2 projects:
 1. A simple class to validate email, password and credit card datas (class1.cs)
 2. A Nunit test class to perform unit test of the class1 (UnitTest1.cs)
 
-[a relative link](./chapters/chap5.ctb)
+[Download this story](./chapters/chap5.ctb)
 <br/>
-Source code is available at: https://github.com/zinzloun/InfoSec_chronicles/blob/master/SampleTDD_src
+[Download the source code](./SampleTDD_src)
 
 
 <hr>
