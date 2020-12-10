@@ -22,7 +22,7 @@ The test has been carried out against 3 Win10X64 machine, fully patched with dif
 
 ## Chapter 4: Configure a DMZ LAB on Vmware Workstation using pfSense firewall
 ###### 09/12/20 ver 1.0
-The LAB setup excpects 3 VM: the pfSense firewall, a Centos 8 HTTP server and Win7 client. The requirements are:
+The LAB setup is composed by 3 VM: the pfSense firewall, a Centos 8 HTTP server and Win7 client. The requirements are:
 - Firewall administration should be allowed from the WAN only to the Host machine
 - Configure the access to the HTTP server into the DMZ from the LAN and WAN
 - The LAN client must able to access in SSH only the Centos server
