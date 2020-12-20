@@ -47,6 +47,16 @@ The Visual Studio solution is composed by 2 projects:
 <br/>
 [Download the source code](./SampleTDD_src)
 
+## Chapter 6: WebGoat 8
+###### 20/12/20 ver 1.0
+Please note that this is not a walk-through since there are some detailed explanations I tried to avoid to spoil however,
+evantually I tried to provide the logic behind some assigments, at least those I found more complex, sometime coding a script to 
+automete the process and to better understand it, 
+
+[Read this story](./chapters/_chap6.ctb)
+<br/>
+[Download the source code](./scripts/wgSqliAdv12.py)
+
 
 <hr>
 
