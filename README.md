@@ -55,7 +55,8 @@ automete the process and to better understand it,
 
 [Read this story](./chapters/_chap6.ctb)
 <br/>
-[Download the source code](./scripts/wgSqliAdv12.py)
+Scripts:
+- [SQLi advantage 12](./scripts/wgSqliAdv12.py)
 
 
 <hr>
