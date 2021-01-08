@@ -63,7 +63,6 @@ Insecure deserialization:
 - [payload Pwn](./scripts/Pwn.java)
 - [windows sleep](./scripts/sleep.exe)
 
-
 <hr>
 
 <sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
