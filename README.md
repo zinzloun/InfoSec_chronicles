@@ -55,8 +55,13 @@ automete the process and to better understand it,
 
 [Read this story](./chapters/_chap6.ctb)
 <br/>
-Scripts:
+SQLi:
 - [SQLi advantage 12](./scripts/wgSqliAdv12.py)
+<br/>
+Insecure deserialization:
+- [modified VulnerableTaskHolder](./scripts/VulnerableTaskHolder.java)
+- [payload Pwn](./scripts/Pwn.java)
+- [windows sleep](./scripts/sleep.exe)
 
 
 <hr>
