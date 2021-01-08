@@ -54,10 +54,9 @@ evantually I tried to provide the logic behind some assigments, at least those I
 automete the process and to better understand it, 
 
 [Read this story](./chapters/_chap6.ctb)
-<br/>
+<br/><br/>
 SQLi:
 - [SQLi advantage 12](./scripts/wgSqliAdv12.py)
-<br/>
 
 Insecure deserialization:
 - [modified VulnerableTaskHolder](./scripts/VulnerableTaskHolder.java)
