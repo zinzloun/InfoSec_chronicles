@@ -61,7 +61,6 @@ SQLi:
 Insecure deserialization:
 - [modified VulnerableTaskHolder](./scripts/VulnerableTaskHolder.java)
 - [payload Pwn](./scripts/Pwn.java)
-- [windows sleep](./scripts/sleep.exe)
 
 <hr>
 
