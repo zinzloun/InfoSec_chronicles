@@ -58,6 +58,7 @@ automete the process and to better understand it,
 SQLi:
 - [SQLi advantage 12](./scripts/wgSqliAdv12.py)
 <br/>
+
 Insecure deserialization:
 - [modified VulnerableTaskHolder](./scripts/VulnerableTaskHolder.java)
 - [payload Pwn](./scripts/Pwn.java)
