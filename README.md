@@ -51,7 +51,8 @@ The Visual Studio solution is composed by 2 projects:
 ###### 20/12/20 ver 1.0
 Please note that this is not a walk-through since there are some detailed explanations I tried to avoid to spoil however,
 evantually I tried to provide the logic behind some assigments, at least those I found more complex, sometime coding a script to 
-automete the process and to better understand it, 
+automete the process and to better understand it. I run the Goat and the Wolf on a Win10 box.<br/>
+WebGoat is a great application since you can have some explanations before to try to exploit a vulnerability, so I suggest to every one interested in the matter to give it a try.
 
 [Read this story](./chapters/_chap6.ctb)
 <br/><br/>
