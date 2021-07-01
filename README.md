@@ -65,11 +65,12 @@ Insecure deserialization:
 
 ## Chapter 7: Set up a simple PKI using CFSSL
 ###### 01/07/21 ver 1.0
-Create a simple PK infrastructure using the CFSSL tool. CAUTION: don not replicate the web server configuration
+Create a simple PK infrastructure using the CFSSL tool. CAUTION: don not use the web server script
 in a real enviroment 
 
 [Read this story](./chapters/chap7.ctb)
-
+<br/>
+[Download the Python web server script](./scripts/start-server.py)
 <hr>
 
 <sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
