@@ -63,6 +63,13 @@ Insecure deserialization:
 - [modified VulnerableTaskHolder](./scripts/VulnerableTaskHolder.java)
 - [payload Pwn](./scripts/Pwn.java)
 
+## Chapter 7: Set up a simple PKI using CFSSL
+###### 01/07/21 ver 1.0
+Create a simple PK infrastructure using the CFSSL tool. CAUTION: don not replicate the web server configuration
+in a real enviroment 
+
+[Read this story](./chapters/chap7.ctb)
+
 <hr>
 
 <sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
