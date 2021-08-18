@@ -83,7 +83,7 @@ Some experiments with RCE against  the Apache module inspired by a real engagmen
 
 [Read this story](./chapters/chap8.ctb)
 
-<hr>
+
 <sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
 	
 
