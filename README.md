@@ -73,6 +73,17 @@ in a real enviroment
 [Download the Python web server script](./scripts/start-server.py)
 <hr>
 
+## Chapter 8: Modsecurity 2.9 OWASP CRS 
+###### 18/08/21 ver 1.0
+Some experiments with RCE against  the Apache module inspired by a real engagment. The story goes through:
+1. Modsecurity installation on Rocky linux
+2. Module recon tecnique
+3. Modify the paranoia level (LP) of the module
+4. Custom rule creation
+
+[Read this story](./chapters/chap8.ctb)
+
+<hr>
 <sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
 	
 
