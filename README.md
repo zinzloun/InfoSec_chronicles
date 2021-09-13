@@ -71,7 +71,7 @@ in a real enviroment
 [Read this story](./chapters/chap7.ctb)
 <br/>
 [Download the Python web server script](./scripts/start-server.py)
-<hr>
+
 
 ## Chapter 8: Modsecurity 2.9 OWASP CRS 
 ###### 18/08/21 ver 1.0
@@ -83,7 +83,21 @@ Some experiments with RCE against  the Apache module inspired by a real engagmen
 
 [Read this story](./chapters/chap8.ctb)
 
+## Chapter 9: Simda trojan reverse engineer as amateur
+###### 13/09/21 ver 1.0
+I created a this story following a course. Prerequisites are:
+1. Installed Flare VM: https://github.com/fireeye/flare-vm
+2. Basic knowledge of IA32 assembly
 
+<b>Warning: RUN THE MALWARE INSIDE A VIRTUAL ENVIROMENT, USIGN AN HOST ONLY NET CONNECTION. TAKE A SNAPSHOT BEOFRE PROCEED
+</b>
+
+[Read this story](./chapters/chap9.ctb)
+<br/>
+[Download the malware](./simda.7z). Password is: S1md@
+
+
+<hr>
 <sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
 	
 
