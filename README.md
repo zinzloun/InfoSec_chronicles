@@ -83,7 +83,7 @@ Some experiments with RCE against  the Apache module inspired by a real engagmen
 
 [Read this story](./chapters/chap8.ctb)
 
-## Chapter 9: Simda trojan reverse engineer as amateur
+## Chapter 9: Simda trojan reverse engineering being an amateur
 ###### 13/09/21 ver 1.0
 I created a this story following a course. Prerequisites are:
 1. Installed Flare VM: https://github.com/fireeye/flare-vm
