@@ -1,4 +1,6 @@
 # InfoSec Chronicles from Noobland
+<i>PLease note that the linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</i>
+
 ## Chapter 0: Abuse Excel VBA macro, a simple approach
 ###### 21/07/20 ver 1.2
 In this article I will illustrate how to execute a payload loaded from a VBA macro script embedded in an Excel xlsm file.<br>
@@ -95,10 +97,6 @@ I created a this story following a course. Prerequisites are:
 [Read this story](./chapters/chap9.ctb)
 <br/>
 [Download the malware](./simda.7z). Password is: S1md@
-
-
-<hr>
-<sub>The linked files are in Cherry Tree format: https://www.giuspen.com/cherrytree</sub>
 	
 
  
