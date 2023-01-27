@@ -30,24 +30,9 @@ No encoding\encryption has been implemented. Keeping the things simple actually 
 
 [Read this story](./chapters/chap3.ctb)
 
-## Chapter 4: Configure a DMZ LAB on Vmware Workstation using pfSense firewall
-###### 09/12/20 ver 1.0
-The LAB setup is composed by 3 VM: the pfSense firewall, a Centos 8 HTTP server and Win7 client. The requirements are:
-- Firewall administration should be allowed from the WAN only to the Host machine
-- Configure the access to the HTTP server into the DMZ from the LAN and WAN
-- The LAN client must able to access in SSH only the Centos server
+## ~~Chapter 4: Configure a DMZ LAB on Vmware Workstation using pfSense firewall~~
 
-[Read this story](./chapters/chap4.ctb)
-
-## Chapter 5: A simple example of a Test Drive Development solution in VS2019ce
-###### 10/12/20 ver 1.0
-The Visual Studio solution is composed by 2 projects:
-1. A simple class to validate email, password and credit card datas (class1.cs)
-2. A Nunit test class to perform unit test of the class1 (UnitTest1.cs)
-
-[Read this story](./chapters/chap5.ctb)
-<br/>
-[Download the source code](./SampleTDD_src)
+## ~~Chapter 5: A simple example of a Test Drive Development solution in VS2019ce~~
 
 ## Chapter 6: WebGoat 8
 ###### 20/12/20 ver 1.0
@@ -65,15 +50,7 @@ Insecure deserialization:
 - [modified VulnerableTaskHolder](./scripts/VulnerableTaskHolder.java)
 - [payload Pwn](./scripts/Pwn.java)
 
-## Chapter 7: Set up a simple PKI using CFSSL
-###### 01/07/21 ver 1.0
-Create a simple PK infrastructure using the CFSSL tool. CAUTION: don not use the web server script
-in a real enviroment 
-
-[Read this story](./chapters/chap7.ctb)
-<br/>
-[Download the Python web server script](./scripts/start-server.py)
-
+~~## Chapter 7: Set up a simple PKI using CFSSL~~
 
 ## Chapter 8: Modsecurity 2.9 OWASP CRS 
 ###### 18/08/21 ver 1.0
