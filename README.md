@@ -50,7 +50,7 @@ Insecure deserialization:
 - [modified VulnerableTaskHolder](./scripts/VulnerableTaskHolder.java)
 - [payload Pwn](./scripts/Pwn.java)
 
-~~## Chapter 7: Set up a simple PKI using CFSSL~~
+## ~~Chapter 7: Set up a simple PKI using CFSSL~~
 
 ## Chapter 8: Modsecurity 2.9 OWASP CRS 
 ###### 18/08/21 ver 1.0
