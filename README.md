@@ -74,6 +74,12 @@ I created a this story following a course. Prerequisites are:
 [Read this story](./chapters/chap9.ctb)
 <br/>
 [Download the malware](./simda.7z). Password is: S1md@
-	
+
+## Chapter 10: Get a reverse shell using ngrok
+###### 04/04/23 ver 1.0
+
+You could have the necessity to get a reverse shell in a <i>natted</i> enviroment (e.g. your systeme access Internet using an ISP router) and your public IP is not fixed. 
+<br>[Read this story](./chapters/chap10.ctb)
+
 
  
