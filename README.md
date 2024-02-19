@@ -15,13 +15,7 @@ The client has installed an AV solution, with an host firewall. No IPS\IDS were 
 
 [Read this story](./chapters/chap1.ctb)
 
-## Chapter 2: Setup a Virtualbox LAB to test Security Onion
-###### 17/09/20 ver 1.0
-In oreder to test Security Onion before to install it on production I wrote down some notes, this has to be consider a Homelab and no
-payed software were used, you can get an evaluation copy of Win 10 enterprise valid for 90 days or just install another light Linux OS like:
-https://www.bunsenlabs.org. Parrot OS is also used.
-
-[Read this story](./chapters/chap2.ctb)
+##  ~~Chapter 2: Setup a Virtualbox LAB to test Security Onion~~
 
 ## Chapter 3: Abuse MSBuild to compile and execute a C# wrapper that, using the Runspace object, executes a Powershell reverse shell
 ###### 30/09/20 ver 1.0
@@ -34,21 +28,8 @@ No encoding\encryption has been implemented. Keeping the things simple actually 
 
 ## ~~Chapter 5: A simple example of a Test Drive Development solution in VS2019ce~~
 
-## Chapter 6: WebGoat 8
-###### 20/12/20 ver 1.0
-Please note that this is not a walk-through since there are some detailed explanations I tried to avoid to spoil however,
-evantually I tried to provide the logic behind some assigments, at least those I found more complex, sometime coding a script to 
-automete the process and to better understand it. I run the Goat and the Wolf on a Win10 box.<br/>
-WebGoat is a great application since you can have some explanations before to try to exploit a vulnerability, so I suggest to every one interested in the matter to give it a try.
+##  ~~Chapter 6: WebGoat 8~~
 
-[Read this story](./chapters/chap6.ctb)
-<br/><br/>
-SQLi:
-- [SQLi advantage 12](./scripts/wgSqliAdv12.py)
-
-Insecure deserialization:
-- [modified VulnerableTaskHolder](./scripts/VulnerableTaskHolder.java)
-- [payload Pwn](./scripts/Pwn.java)
 
 ## ~~Chapter 7: Set up a simple PKI using CFSSL~~
 
