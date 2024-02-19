@@ -33,15 +33,7 @@ No encoding\encryption has been implemented. Keeping the things simple actually 
 
 ## ~~Chapter 7: Set up a simple PKI using CFSSL~~
 
-## Chapter 8: Modsecurity 2.9 OWASP CRS 
-###### 18/08/21 ver 1.0
-Some experiments with RCE against  the Apache module inspired by a real engagment. The story goes through:
-1. Modsecurity installation on Rocky linux
-2. Module recon tecnique
-3. Modify the paranoia level (LP) of the module
-4. Custom rule creation
-
-[Read this story](./chapters/chap8.ctb)
+##  ~~Chapter 8: Modsecurity 2.9 OWASP CRS~~ 
 
 ## Chapter 9: Simda trojan reverse engineering being an amateur
 ###### 13/09/21 ver 1.0
